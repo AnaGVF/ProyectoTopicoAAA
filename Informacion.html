@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Información - Proyecto AAA</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Información - Proyecto AAA</title>
 
-    <link rel="icon" href="img/AAA.png" type="image/icon type">
-    
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
+  <link rel="icon" href="img/AAA.png" type="image/icon type">
+
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
-<body style="justify-content: center; flex-direction: column; align-items: center; height: 100vh; width: 100%; background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);">
 
-    <header style="width: inherit;">
-        <div class="container">
-          <nav class="navbar navbar-expand-md" style="display: flex; justify-content: space-between;">
-            <a class="navbar-brand" href="https://www.froala.com">
-              <img src="img/AAA.png" height="90" alt="image">
-            </a>               
-            <div>
-              <a class="btn btn-outline-primary ml-md-12" href="Home.html">Regresar</a>
-            </div>
-          </nav>
+<body
+  style="justify-content: center; flex-direction: column; align-items: center; height: 100vh; width: 100%; background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);">
+
+  <header style="width: inherit;">
+    <div class="container">
+      <nav class="navbar navbar-expand-md" style="display: flex; justify-content: space-between;">
+        <a class="navbar-brand" href="https://www.froala.com">
+          <img src="img/AAA.png" height="90" alt="image">
+        </a>
+        <div>
+          <a class="btn btn-outline-primary ml-md-12" href="Home.html">Regresar</a>
         </div>
-      </header>
+      </nav>
+    </div>
+  </header>
 
-    <button onclick="responsiveVoice.speak('yay');" type="button" value="Play">Play</button>
+  <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+  <script>
+    window.onload = my_code;
 
-    <script src="https://code.responsivevoice.org/responsivevoice.js">
-        function my_code(){
-            responsiveVoice.speak('yay');
-        }
+    function my_code() {
+      responsiveVoice.speak('Se logró', 'Spanish Female');
+    }
+  </script>
 
-        window.onload=my_code();
-    </script>
-    
 
-    
+
 </body>
+
 </html>
