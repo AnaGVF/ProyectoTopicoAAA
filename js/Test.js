@@ -33,86 +33,86 @@ var calificacion = 0;
     incorrecto.classList.add("alert-danger");
     incorrecto.style.width = "100%";
     incorrecto.style.marginTop = "20px";
-    incorrecto.textContent = "¡Oh no! Tu respuesta es incorrecta. Yokoi Kenji cree que la disciplina tiene un peso mayor que la inteligencia en las personas.";
+incorrecto.textContent = "¡Oh no! Tu respuesta es incorrecta. El liderazgo no solo se trata de dar ordenes, se trata de saber guiar y dirigir a las personas";
 
     // #2
     var incorrecto_2 = incorrecto.cloneNode(true);
-    incorrecto_2.textContent = "¡Oh no! Tu respuesta es incorrecta. Recuerda que el éxito debe ser lento, ya que el secreto del éxito es trabajar y tener siempre una visión a largo plazo. El éxito fácil y rápido es falso.";
+incorrecto_2.textContent = "¡Oh no! Tu respuesta es incorrecta. Es una estrategia de negocio que, como su nombre lo indica, pone al cliente como centro de la misma.";
 
     // #3
     var incorrecto_3 = incorrecto.cloneNode(true);
-    incorrecto_3.textContent = "¡Oh no! Tu respuesta es incorrecta. Una persona debe también enfocarse en la educación de su ser, no sólamente de conocimientos. Si una persona trabaja en su ser, se conoce mejor y logra tener un mejor desempeño tanto individual como social.";
+incorrecto_3.textContent = "¡Oh no! Tu respuesta es incorrecta. El networking se trata de conocer personas y contactos que te ayudarán para crecer laboral, profesional y personalmente.";
 
     // #4
     var incorrecto_4 = incorrecto.cloneNode(true);
-    incorrecto_4.textContent = "¡Oh no! Tu respuesta es incorrecta. La vida puede ser cruel ante aquellas personas que sólamente gastan su tiempo inútilmente. Depende de cada persona el invertir o el gastar sus horas de vida. Una vez se acaba un minuto de la vida, ese minuto jamás regresará. ¡Recuerda aprovechar tu tiempo al máximo!";
+incorrecto_4.textContent = "¡Oh no! Tu respuesta es incorrecta. Tener iniciativa propia es una cuestión de ponerse en acción, tener fuerza de voluntad, confianza en uno mismo y constancia.";
     
     // #5
     var incorrecto_5 = incorrecto.cloneNode(true);
-    incorrecto_5.textContent = "¡Oh no! Tu respuesta es incorrecta. Una persona apasionada hace más de lo que se le pide, llega temprano y siempre está en un constante aprendizaje. Según dijo Yokoi Kenji, un profesional sin pasión es un estorbo con conocimientos.";
+incorrecto_5.textContent = "¡Oh no! Tu respuesta es incorrecta. Planear y probar nuevas estrategias siempre es arriesgado, por lo que es importante tener claros los objetivos y las metas que se quieren alcanzar";
 
     // #6
     var incorrecto_6 = incorrecto.cloneNode(true);
-    incorrecto_6.textContent = "¡Oh no! Tu respuesta es incorrecta. Si una persona no es feliz, no va a encontrar su propósito. La felicidad es una decisión tomada y un estado interno. No es una emoción.";
+incorrecto_6.textContent = "¡Oh no! Tu respuesta es incorrecta. Ser observador significa ver las cosas desde diferentes perspectivas, esto te ayudara a contemplar problemáticas desde diferentes puntos y te ayudara a encontrar nuevos métodos y soluciones.";
 
     // Función de Calificar 
     function submit() {
         // Pregunta #1
-        if ($('#yokoi').is(':checked')) {
+        if ($('#Liderazgo').is(':checked')) {
             document.getElementById("retroalimentacion").appendChild(correcto);
             document.getElementById("retroalimentacion").classList.add("w-100");
             calificacion++;
-        } else if ($('#carlos').is(':checked')) {
+        } else if ($('#Networking').is(':checked')) {
             document.getElementById("retroalimentacion").appendChild(incorrecto);
             document.getElementById("retroalimentacion").classList.add("w-100");
         }
 
         // Pregunta #2
-        if ($('#lento').is(':checked')) {
+        if ($('#Cliente').is(':checked')) {
             document.getElementById("retroalimentacion_2").appendChild(correcto_2);
             document.getElementById("retroalimentacion_2").classList.add("w-100");
             calificacion++;
-        } else if ($('#rapido').is(':checked')) {
+        } else if ($('#Negocio').is(':checked')) {
             document.getElementById("retroalimentacion_2").appendChild(incorrecto_2);
             document.getElementById("retroalimentacion_2").classList.add("w-100");
         }
 
         // Pregunta #3
-        if ($('#si').is(':checked')) {
+        if ($('#Networking3').is(':checked')) {
             document.getElementById("retroalimentacion_3").appendChild(correcto_3);
             document.getElementById("retroalimentacion_3").classList.add("w-100");
             calificacion++;
-        } else if ($('#no').is(':checked')) {
+        } else if ($('#Negociacion').is(':checked')) {
             document.getElementById("retroalimentacion_3").appendChild(incorrecto_3);
             document.getElementById("retroalimentacion_3").classList.add("w-100");
         }
 
         // Pregunta #4
-        if ($('#cruel').is(':checked')) {
+        if ($('#Iniciativa').is(':checked')) {
             document.getElementById("retroalimentacion_4").appendChild(correcto_4);
             document.getElementById("retroalimentacion_4").classList.add("w-100");
             calificacion++;
-        } else if ($('#maravillosa').is(':checked')) {
+        } else if ($('#Compromiso').is(':checked')) {
             document.getElementById("retroalimentacion_4").appendChild(incorrecto_4);
             document.getElementById("retroalimentacion_4").classList.add("w-100");
         }
 
         // Pregunta #5
-        if ($('#apasionada').is(':checked')) {
+        if ($('#Falso').is(':checked')) {
             document.getElementById("retroalimentacion_5").appendChild(correcto_5);
             document.getElementById("retroalimentacion_5").classList.add("w-100");
             calificacion++;
-        } else if ($('#malhumorada').is(':checked')) {
+        } else if ($('#Verdadero').is(':checked')) {
             document.getElementById("retroalimentacion_5").appendChild(incorrecto_5);
             document.getElementById("retroalimentacion_5").classList.add("w-100");
         }
 
         // Pregunta #6
-        if ($('#feliz').is(':checked')) {
+        if ($('#Observador').is(':checked')) {
             document.getElementById("retroalimentacion_6").appendChild(correcto_6);
             document.getElementById("retroalimentacion_6").classList.add("w-100");
             calificacion++;
-        } else if ($('#genia').is(':checked')) {
+        } else if ($('#Innovador').is(':checked')) {
             document.getElementById("retroalimentacion_6").appendChild(incorrecto_6);
             document.getElementById("retroalimentacion_6").classList.add("w-100");
         }
