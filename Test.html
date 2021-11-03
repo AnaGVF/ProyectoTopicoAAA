@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - Proyecto AAA</title>
+
+    <link rel="icon" href="img/AAA.png" type="image/icon type">
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script defer src="js/Test.js"></script>
+</head>
+<body>
+    <header style="width: inherit;">
+        <div class="container">
+          <nav class="navbar navbar-expand-md" style="display: flex; justify-content: space-between;">
+            <a class="navbar-brand" href="Principal.html">
+              <img src="img/AAA.png" height="90" alt="image">
+            </a>
+            <div>
+              <a class="btn btn-outline-primary ml-md-12" href="Principal.html">Regresar</a>
+            </div>
+          </nav>
+        </div>
+    </header>
+
+    <!-- Evaluación - 7 Hábitos de la Gente Altamente Efectiva  -->
+    <section class="fdb-block" id="menu">
+        <div class="container" style="height: auto;">
+          <div class="row text-center">
+            <div class="col-12" style="margin-top: 1%;">
+              <h1 style="font-family: 'Special Elite', cursive; font-weight: bold;">Evaluación</h1>
+              <h1 style="font-family: 'Special Elite', cursive; font-weight: bold;">Decálogo de Yokoi Kenji y Carlos Kasuga</h1>
+            </div>
+          </div>
+          <div class="row text-left mt-3" style="display: flex; align-items: center; justify-content: space-evenly; flex-direction: column;">
+            <div class="col-12 col-md">
+              <div class="row mb-5" style="border-radius: 20px; background: #cbeaff;  /* fallback for old browsers */
+              background: -webkit-linear-gradient(to top, #FFFFFF, #cbeaff);  /* Chrome 10-25, Safari 5.1-6 */
+              background: linear-gradient(to top, #FFFFFF, #cbeaff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+              height: auto; padding: 20px;">
+                <!-- Pregunta #1 -->
+                <div class="col-12 mt-2" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+                  <h4 class="mb-3 mb-4">1. _____________ cree que la disciplina tarde o temprano vencerá a la inteligencia.</h4>
+                  <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
+                    <!-- Opción #1 -->
+                    <div>
+                        <input id="yokoi" type="checkbox" style="zoom: 1.5;"> Yokoi Kenji
+                    </div>
+                    <!-- Opción #2 -->
+                    <div>
+                        <input id="carlos" type="checkbox" style="zoom: 1.5;"> Carlos Kasuga
+                    </div>                   
+                  </div>
+                  <div id="retroalimentacion">
+                  </div>                    
+                </div>
+
+                <!-- Pregunta #2 -->
+                <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+                    <h4 class="mb-3 mb-4">2. El éxito debe ser _____________.</h4>
+                    <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
+                      <!-- Opción #1 -->
+                      <div>
+                          <input id="rapido" type="checkbox" style="zoom: 1.5;"> rápido
+                      </div>
+                      <!-- Opción #2 -->
+                      <div>
+                          <input id="lento" type="checkbox" style="zoom: 1.5;"> lento
+                      </div>
+                    </div>
+                    <div id="retroalimentacion_2">
+                    </div>                    
+                </div>
+
+                <!-- Pregunta #3 -->
+                <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+                    <h4 class="mb-3 mb-4">3. Una persona debe tener educación en su ser, no sólamente de conocimientos.</h4>
+                    <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
+                      <!-- Opción #1 -->
+                      <div>
+                          <input id="si" type="checkbox" style="zoom: 1.5;"> Sí
+                      </div>
+                      <!-- Opción #2 -->
+                      <div>
+                          <input id="no" type="checkbox" style="zoom: 1.5;"> No
+                      </div>                        
+                    </div>
+                    <div id="retroalimentacion_3">
+                    </div>                    
+                </div>
+
+                <!-- Pregunta #4 -->
+                <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+                    <h4 class="mb-3 mb-4">4. La vida puede ser _____________ ante aquellas personas que solo gastan su tiempo inútilmente.</h4>
+                    <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
+                      <!-- Opción #1 -->
+                      <div>
+                          <input id="maravillosa" type="checkbox" style="zoom: 1.5;"> maravillosa
+                      </div>
+                      <!-- Opción #2 -->
+                      <div>
+                          <input id="cruel" type="checkbox" style="zoom: 1.5;"> cruel
+                      </div>                        
+                    </div>
+                    <div id="retroalimentacion_4">
+                    </div>                    
+                </div>
+
+                <!-- Pregunta #5 -->
+                <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+                    <h4 class="mb-3 mb-4">5. Una persona _____________ hace más de lo que se le pide, llega temprano y siempre está en un constante aprendizaje.</h4>
+                    <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
+                      <!-- Opción #1 -->
+                      <div>
+                          <input id="apasionada" type="checkbox" style="zoom: 1.5;"> apasionada
+                      </div>
+                      <!-- Opción #2 -->
+                      <div>
+                          <input id="malhumorada" type="checkbox" style="zoom: 1.5;"> malhumorada
+                      </div>                        
+                    </div>
+                    <div id="retroalimentacion_5">
+                    </div>                    
+                </div>
+
+                <!-- Pregunta #6 -->
+                <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+                    <h4 class="mb-3 mb-4">6. Si una persona no es _____________, no va a enonctrar su propósito.</h4>
+                    <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
+                      <!-- Opción #1 -->
+                      <div>
+                          <input id="genia" type="checkbox" style="zoom: 1.5;"> genia
+                      </div>
+                      <!-- Opción #2 -->
+                      <div>
+                          <input id="feliz" type="checkbox" style="zoom: 1.5;"> feliz
+                      </div>                       
+                    </div>
+                    <div id="retroalimentacion_6">
+                    </div>                    
+                </div>
+
+                <!-- Calificación  -->
+                <div class="mt-5" style="width: -webkit-fill-available; display: flex; justify-content: center;">
+                    <h3 style="display: flex; justify-content: center; margin-right: 10px;">Calificación: </h3>
+                    <h3 id="calificacion"></h3>
+                </div>
+                <!-- Enviar Respuestas  -->
+                <div class="row mt-5 mb-3" style="width: -webkit-fill-available; display: flex; justify-content: space-evenly;">
+                    <button type="button" class="btn btn-danger" onclick="location.href='DecalogoYokoi.html'">Regresar</button>
+                    <button type="button" class="btn btn-success" onclick="submit()">Enviar</button>
+                </div>              
+              </div>
+            </div>
+      </section>     
+
+</body>
+</html>
