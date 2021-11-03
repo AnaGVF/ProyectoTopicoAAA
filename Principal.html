@@ -41,7 +41,8 @@
               <img alt="image" class="img-fluid" src="img/Robot.png">
               <div style="background-color: yellow; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                 <!-- Aquí se inserta el texto de bienvenida  -->
-                <p style="text-align: center; font-size: 1.5em; margin-top: 10%;">Insertar texto</p>
+                <p style="text-align: center; font-size: 1.5em; margin-top: 10%;">Hola! Yo soy Roberta, tu asistente inteligente. Da click en las opciones que tienes a tu derecha y te acompañaré a
+                descubrir lo que tenemos preparado para ti.</p>
               </div>
             </div>
       
@@ -78,6 +79,13 @@
           </div>
         </div>
       </section>
-    
 </body>
+<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+  <script>
+    window.onload = my_code;
+
+    function my_code() {
+      responsiveVoice.speak('Hola! Yo soy Roberta, tu asistente inteligente. Da click en las opciones que tienes a tu derecha y te acompañaré adescubrir lo que tenemos preparado para ti.', 'Spanish Female');
+    }
+  </script>
 </html>

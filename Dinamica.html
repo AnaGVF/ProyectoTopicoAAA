@@ -82,6 +82,30 @@
         .contenedor-derecha button {
             width: 50%;
         }
+
+        #Instrucciones2 {
+            display: none;
+        }
+
+        #Instrucciones3 {
+            display: none;
+        }
+
+        #Instrucciones4 {
+            display: none;
+        }
+
+        #Campos2 {
+            display: none;
+        }
+
+        #Campos3 {
+            display: none;
+        }
+
+        #Campos4 {
+            display: none;
+        }
     </style>
 </head>
 
@@ -107,21 +131,107 @@
                 <img alt="image" class="img-fluid" width="50%;" src="img/Robot.png">
             </div>
             <div class="contenedor-izquierda-inferior">
-                <div class="textoAsistente" style="width: 50%; margin-top: 5%;">
+                <div class="textoAsistente" style="width: 50%; margin-top: 5%;" id="Instrucciones1">
                     <p>
-                        Instrucciones xD
+                        Para ti, ¿Qué es el liderazgo? ¿Cómo lo ves reflejado en tu vida? ¿Por que es importante?
+                    </p>
+                </div>
+                <div class="textoAsistente" style="width: 50%; margin-top: 5%;" id="Instrucciones2">
+                    <p>
+                        ¿Consideras que tienes una visión estrategica y global? ¿por qué?
+                    </p>
+                </div>
+                <div class="textoAsistente" style="width: 50%; margin-top: 5%;" id="Instrucciones3">
+                    <p>
+                        ¿Cómo te relacionas con los demás? ¿Consideras que dominas el networking?
+                    </p>
+                </div>
+                <div class="textoAsistente" style="width: 50%; margin-top: 5%;" id="Instrucciones4">
+                    <p>
+                        ¿Qué tan importante crees que es la negociación en tu vida? ¿Cómo crees que se relaciona con
+                        tener iniciativa?
                     </p>
                 </div>
             </div>
         </div>
-        <div class="contenedor-derecha" id="Resultado1">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
+        <div class="contenedor-derecha" id="Campos1">
+            <textarea name="respuesta1" id="Respuesta1" cols="30" rows="10"
+                placeholder="Ingresa el texto aqui"></textarea>
             <center>
-                <button class="btn btn-outline-primary ml-md-12">Siguiente</button>
+                <button class="btn btn-outline-primary ml-md-12" id="Siguiente1">Siguiente</button>
+            </center>
+        </div>
+        <div class="contenedor-derecha" id="Campos2">
+            <textarea name="" id="Respuesta2" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
+            <center>
+                <button class="btn btn-outline-primary ml-md-12" id="Siguiente2">Siguiente</button>
+            </center>
+        </div>
+        <div class="contenedor-derecha" id="Campos3">
+            <textarea name="" id="Respuesta3" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
+            <center>
+                <button class="btn btn-outline-primary ml-md-12" id="Siguiente3">Siguiente</button>
+            </center>
+        </div>
+        <div class="contenedor-derecha" id="Campos4">
+            <textarea name="" id="Respuesta4" cols="30" rows="10" placeholder="Ingresa el texto aqui""></textarea>
+            <center>
+                <button class=" btn btn-outline-primary ml-md-12" id="Siguiente4">Terminar dinámica</button>
             </center>
         </div>
     </div>
-
 </body>
+<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+<script>
+    var valor = "";
+    window.onload = init;
+
+
+    function init() {
+        responsiveVoice.speak('A continuación te diré las instrucciones. Deberás contestar las siguientes preguntas con total honestidad. Al terminar, deberás guardar las respuestas para que puedas comparar tus avances con el tiempo. Asi que comencémos con las preguntas. ', 'Spanish Female');
+        responsiveVoice.speak('Para ti, ¿Qué es el liderazgo? ¿Cómo lo ves reflejado en tu vida? ¿Por que es importante?', 'Spanish Female');
+        document.querySelector('#Siguiente1').addEventListener('click', Mostrar1);
+        document.querySelector('#Siguiente2').addEventListener('click', Mostrar2);
+        document.querySelector('#Siguiente3').addEventListener('click', Mostrar3);
+        document.querySelector('#Siguiente4').addEventListener('click', Mostrar4);
+    }
+    
+    function Mostrar1() {
+        responsiveVoice.speak('¿Consideras que tienes una visión estrategica y global? ¿por qué?', 'Spanish Female');
+        valor = document.getElementById("Respuesta1").value;
+        valor = valor + "\n";
+        document.getElementById('Instrucciones1').style.display = 'none';
+        document.getElementById('Campos1').style.display = 'none';
+        document.getElementById('Campos2').style.display = 'flex';
+        document.getElementById('Instrucciones2').style.display = 'block';
+    }
+    
+    function Mostrar2() {
+        responsiveVoice.speak('¿Cómo te relacionas con los demás? ¿Consideras que dominas el networking?', 'Spanish Female');
+        valor = valor + document.getElementById("Respuesta2").value;
+        valor = valor + "\n";
+        document.getElementById('Instrucciones2').style.display = 'none';
+        document.getElementById('Campos2').style.display = 'none';
+        document.getElementById('Campos3').style.display = 'flex';
+        document.getElementById('Instrucciones3').style.display = 'block';
+    }
+
+    function Mostrar3() {
+        responsiveVoice.speak('Qué tan importante crees que es la negociación en tu vida? ¿Cómo crees que se relaciona con tener iniciativa ?', 'Spanish Female');
+        valor = valor + document.getElementById("Respuesta3").value;
+        valor = valor + "\n";
+        document.getElementById('Instrucciones3').style.display = 'none';
+        document.getElementById('Campos3').style.display = 'none';
+        document.getElementById('Campos4').style.display = 'flex';
+        document.getElementById('Instrucciones4').style.display = 'block';
+    }
+    
+    function Mostrar4() {
+        valor = valor + document.getElementById("Respuesta4").value;
+        valor = valor + "\n";
+        alert(valor);
+        window.open('Principal.html','_self');
+    }
+</script>
 
 </html>
